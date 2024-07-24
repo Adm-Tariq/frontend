@@ -1,4 +1,3 @@
-import { BiLoaderAlt } from "react-icons/bi";
 import "./Loader.css";
 
 const Loader = () => {
