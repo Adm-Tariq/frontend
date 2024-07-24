@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 const Ad728x90 = (props) => {
-  const banner = useRef(null);
+  const bannerAd728x90 = useRef(null);
 
   const atOptions = {
     key: "90882ba3881c2aa2a5d4c801c7c59635",
@@ -12,21 +12,21 @@ const Ad728x90 = (props) => {
   };
 
   useEffect(() => {
-    if (banner.current && !banner.current.firstChild) {
+    if (bannerAd728x90.current && !bannerAd728x90.current.firstChild) {
       const conf = document.createElement("script");
       const script = document.createElement("script");
       script.type = "text/javascript";
       script.src = `//aboardstepbugs.com/90882ba3881c2aa2a5d4c801c7c59635/invoke.js`;
       conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`;
 
-      banner.current.append(conf);
-      banner.current.append(script);
+      bannerAd728x90.current.append(conf);
+      bannerAd728x90.current.append(script);
     }
-  }, [banner]);
+  }, [bannerAd728x90]);
 
   return (
     <div
-      ref={banner}
+      ref={bannerAd728x90}
       className={`${props.display} mx-auto my-3 text-center`}
     ></div>
   );

@@ -15,7 +15,6 @@ const Course = () => {
       <section className="courses">
         <Ad728x90 display={"d-none d-md-block"} />
         <Ad320x50 display={"d-sm-none"} />
-        <Ad320x50 display={"d-sm-none"} />
         <Ad468x60 display={"d-none d-md-none d-sm-flex"} />
         <Row>
           <Col lg={5} xl={4} className="left d-none d-lg-block">
@@ -74,6 +73,7 @@ const Course = () => {
                       <Ad728x90 display={"d-none d-md-block"} />
                       <Ad320x50 display={"d-sm-none"} />
                       <Ad468x60 display={"d-none d-md-none d-sm-flex"} />
+                      <AdNativeBanner display={""} />
                       service and sales roles. Due to the increased levels of
                       client and customer interactions, businesses increasingly
                       seek employees who can build strong, empathetic
