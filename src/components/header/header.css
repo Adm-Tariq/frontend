@@ -1,0 +1,43 @@
+nav.header .navbar-brand {
+  width: 130px;
+  height: 33px;
+}
+
+nav.header .navbar-brand img {
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+}
+
+nav.header .navbar-collapse {
+  flex-grow: unset !important;
+}
+
+nav.header .links a {
+  font-weight: 500;
+  color: #707070;
+}
+
+nav.header .links a svg {
+  color: #1292fd;
+  margin-right: 5px;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 992px) {
+  nav.header .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav.header .links a.telegram {
+    border-radius: 15px;
+    background-color: #1292fd;
+    color: #fff;
+    margin-left: 15px;
+    padding: 0 15px !important;
+  }
+  nav.header .links a.telegram svg {
+    color: #fff;
+  }
+}
